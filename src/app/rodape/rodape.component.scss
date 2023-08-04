@@ -1,0 +1,31 @@
+@import "../app.component.scss";
+
+
+footer {
+    margin-top: 80px;
+    background-color: $cor-secundaria;
+
+    .container-end {
+        width: 1140px;
+        display: flex;
+        margin-top: auto;
+
+        mat-toolbar {
+            background-color: $cor-secundaria;
+            color: $branco;
+
+            #sloganName {
+                padding-left: 180px;
+                font-size: 19px;
+            }
+        }
+
+        .example-spacer {
+            flex: 1 1 auto;
+        }
+
+        .imageSocialLinks {
+            filter: invert(100%);
+        }
+    }
+}

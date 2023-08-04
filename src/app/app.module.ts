@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { ContatoComponent } from './contato/contato.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
+import { RodapeComponent } from './rodape/rodape.component';
 
 
 //MATERIAL UI
@@ -15,6 +16,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DetalhesComponent } from './detalhes/detalhes.component';
+
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { DetalhesComponent } from './detalhes/detalhes.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    RodapeComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

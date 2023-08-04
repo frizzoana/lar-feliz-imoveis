@@ -1,0 +1,17 @@
+
+<footer>
+  <div class="container-end">
+  <mat-toolbar>
+      <span id="sloganName">{{title}} | {{copyright}} por {{developer}}</span>
+      <span class="example-spacer"></span>
+      <div class="icon" *ngFor="let redeSocial of redesSociais">
+          <a [href]="redeSocial.link">
+              <button mat-icon-button class="example-icon favorite-icon"
+                  aria-label="Example icon-button with heart icon">
+                  <img class="imageSocialLinks" mat-card-image [src]="redeSocial.icone" [alt]="redeSocial.nome" />
+              </button>
+          </a>
+      </div>
+  </mat-toolbar>
+</div>
+</footer>
