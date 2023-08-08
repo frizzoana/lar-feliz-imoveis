@@ -1,28 +1,34 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { NgFor, NgIf } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common'
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import {MatIconModule} from '@angular/material/icon';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf],
+  imports: [MatGridListModule, MatCardModule, MatIconModule, NgFor, NgIf, CommonModule ],
 })
-
 export class HomeComponent {
 
-constructor(private router: Router) { }
+  constructor(private router: Router) { }
 
-verDetalhes(imovelId: string) {
-  this.router.navigate(['/detalhes', imovelId]);
-}
+  verDetalhes(imovelId: string) {
+    this.router.navigate(['/detalhes', imovelId]);
+  }
 
-  nome: string = 'Ana';
-  sobrenome: string = 'Frizzo';
-  // array<any> abrange todos os tipos dentro dela: objeto, string, numeros
+  toogleFavorito(index: number): void {
+    this.imoveis[index].favorito = !this.imoveis[index].favorito
+  }
+
+
+  nome: string = 'Pedro';
+  sobrenome: string = 'dos Santos';
+  data: any = new Date();
   imoveis: Array<any> = [
     {
       id: 1,
@@ -65,7 +71,7 @@ verDetalhes(imovelId: string) {
       favorito: false
     },
     {
-      id: 5,
+      id: "rg93h8eirbgrebngn",
       titulo: 'Sala Comercial',
       foto: 'https://i.ibb.co/2nNsFkt/sala-comercial.jpg',
       quartos: 0,
@@ -74,8 +80,8 @@ verDetalhes(imovelId: string) {
       preco: 250000,
       favorito: true
     },
-{
-      id: 6,
+    {
+      id: "8493ty34hg489gh",
       titulo: 'Cobertura Duplex',
       foto: 'https://i.ibb.co/pPHQfW2/cobertura.jpg',
       quartos: 3,
@@ -84,5 +90,5 @@ verDetalhes(imovelId: string) {
       preco: 1500000,
       favorito: true
     }
-  ]
+  ];
 }
