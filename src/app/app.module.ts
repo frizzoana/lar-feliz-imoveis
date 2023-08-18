@@ -12,14 +12,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
-import { ContatoComponent } from './contato/contato.component';
-
+import { LoginComponent } from './login/login.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import { SessionTimerComponent } from './session-timer/session-timer.component';
+ 
 // MATERIAL UI
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { DetalhesComponent } from './detalhes/detalhes.component';
-import { RodapeComponent } from './rodape/rodape.component';
 
 registerLocaleData(ptBr);
 
@@ -27,9 +27,9 @@ registerLocaleData(ptBr);
     declarations: [
         AppComponent,
         QuemSomosComponent,
-        ContatoComponent,
         CabecalhoComponent,
-        DetalhesComponent,
+        SessionTimerComponent,
+        LoginComponent,
     ],
     providers: [
         { provide: LOCALE_ID, useValue: 'pt' },

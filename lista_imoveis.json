@@ -25,7 +25,7 @@
         {
             "id": 3,
             "titulo": "Casa de Campo",
-            "foto": "https: //i.ibb.co/5h1XHzY/casa-de-campo.jpg",
+            "foto": "https://i.ibb.co/5h1XHzY/casa-de-campo.jpg",
             "quartos": 7,
             "banheiros": 5,
             "area": 800,
@@ -62,5 +62,11 @@
             "preco": 1500000,
             "favorito": true
         }
-    ]
+    ],
+    "contato": {
+      "nome": "ana",
+      "email": "email@email.com",
+      "assunto": "suporte",
+      "mensagem": "ajuda"
+    }
 }
