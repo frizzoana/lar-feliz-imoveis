@@ -6,6 +6,7 @@ import { registerLocaleData } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // MEUS BLOCOS DE CÓDIGO
 import { AppComponent } from './app.component';
@@ -42,7 +43,8 @@ registerLocaleData(ptBr);
         MatToolbarModule,
         MatButtonModule,
         MatIconModule,
-        RodapeComponent
+        RodapeComponent,
+        HttpClientModule
     ]
 })
 export class AppModule { }
