@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { QuemSomosComponent } from './quem-somos/quem-somos.component';
-import { LoginComponent } from './login/login.component';
 import { RodapeComponent } from './rodape/rodape.component';
 import { SessionTimerComponent } from './session-timer/session-timer.component';
  
@@ -20,6 +19,8 @@ import { SessionTimerComponent } from './session-timer/session-timer.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { AdminComponent } from './admin/admin.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 registerLocaleData(ptBr);
 
@@ -29,7 +30,7 @@ registerLocaleData(ptBr);
         QuemSomosComponent,
         CabecalhoComponent,
         SessionTimerComponent,
-        LoginComponent,
+        AdminComponent,
     ],
     providers: [
         { provide: LOCALE_ID, useValue: 'pt' },
@@ -44,7 +45,8 @@ registerLocaleData(ptBr);
         MatButtonModule,
         MatIconModule,
         RodapeComponent,
-        HttpClientModule
+        HttpClientModule, 
+        MatSnackBarModule
     ]
 })
 export class AppModule { }
