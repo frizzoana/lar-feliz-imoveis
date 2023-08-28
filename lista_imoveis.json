@@ -20,7 +20,7 @@
       "banheiros": 1,
       "area": 45,
       "preco": 120000,
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 3,
@@ -30,7 +30,7 @@
       "banheiros": 5,
       "area": 800,
       "preco": 1500000,
-      "favorito": true
+      "favorito": false
     },
     {
       "id": 4,
@@ -68,5 +68,11 @@
     "email": "email@email.com",
     "assunto": "suporte",
     "mensagem": "ajuda"
+  },
+  "usuarios": {
+    "name": "larissa",
+    "username": "frizzolarissa",
+    "password": "0000",
+    "confirmPassword": "0000"
   }
 }

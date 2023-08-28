@@ -29,8 +29,7 @@ registerLocaleData(ptBr);
         AppComponent,
         QuemSomosComponent,
         CabecalhoComponent,
-        SessionTimerComponent,
-        AdminComponent,
+        SessionTimerComponent
     ],
     providers: [
         { provide: LOCALE_ID, useValue: 'pt' },
